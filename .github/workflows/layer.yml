@@ -28,7 +28,7 @@ jobs:
 
     - name: Install Lambda Dependencies
       run: |
-        pip install -r src/requirements.txt -t lambda_layer/python
+        pip install -r transformers[torch] -t lambda_layer/python
 
     - name: Zip Lambda Layer
       run: |
